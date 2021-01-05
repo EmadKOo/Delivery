@@ -1,3 +1,5 @@
 # Delivery
 
-![Emad](https://i.ibb.co/VBD3v4d/f082a54c-9028-422d-a941-742858afe2a3.jpg)
+<p align="center">
+  <img src="Delivery Screenshots/Screenshot_2021-01-05-14-38-39-153_emad.foody" width="200" title="Splash Screen">
+</p>
