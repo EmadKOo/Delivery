@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/homeBackground"
+    android:layout_margin="10dp">
+
+    <com.comix.rounded.RoundedCornerImageView
+        android:id="@+id/itemImage"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/minsn"/>
+
+
+    <TextView
+        android:id="@+id/itemTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Title "
+        android:layout_toRightOf="@+id/itemImage"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+
+
+    <TextView
+        android:id="@+id/itemPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2000 $"
+        android:layout_below="@+id/itemTitle"
+        android:layout_toRightOf="@+id/itemImage"
+        android:textColor="@color/black"
+        android:textSize="12sp"/>
+
+    <TextView
+        android:id="@+id/itemDiscount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3000 $"
+        android:layout_below="@+id/itemPrice"
+        android:layout_toRightOf="@+id/itemImage"
+        android:textColor="@color/black"
+        android:textSize="10sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/itemImage">
+
+        <Button
+            android:id="@+id/addToCartItem"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="Add To Cart"
+            android:background="@drawable/round_edit_text"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:layout_toLeftOf="@+id/likeItem"
+            android:drawableRight="@drawable/ic_shopping_cart_black_24dp"
+            android:drawablePadding="5dp"
+            />
+
+        <ImageView
+            android:id="@+id/likeItem"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/default_like"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"/>
+
+    </RelativeLayout>
+</RelativeLayout>

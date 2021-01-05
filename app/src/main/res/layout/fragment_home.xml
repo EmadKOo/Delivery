@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/homeBackground"
+    tools:context=".Fragments.Home.HomeFragment">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/homeViewPager"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_alignParentTop="true"/>
+
+
+            <TextView
+                android:id="@+id/textCategories"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/loginBackgroundblack"
+                android:text="Categories"
+                android:textSize="15sp"
+                android:layout_marginTop="5dp"
+                android:layout_below="@id/homeViewPager"
+                android:layout_marginLeft="15dp"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/categoriesRecyclerView"
+                android:layout_below="@+id/textCategories"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"/>
+            <TextView
+                android:id="@+id/textTrendingNow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/loginBackgroundblack"
+                android:text="Trending Now"
+                android:textSize="15sp"
+                android:layout_below="@id/categoriesRecyclerView"
+                android:layout_marginLeft="15dp"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/trendingRecyclerView"
+                android:layout_below="@+id/textTrendingNow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"/>
+
+
+            <TextView
+                android:id="@+id/textDicounts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/loginBackgroundblack"
+                android:text="Discounts"
+                android:textSize="15sp"
+                android:layout_below="@id/trendingRecyclerView"
+                android:layout_marginLeft="15dp"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/discountsRecyclerView"
+                android:layout_below="@+id/textDicounts"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"/>
+
+
+        </RelativeLayout>
+    </android.support.v4.widget.NestedScrollView>
+</RelativeLayout>

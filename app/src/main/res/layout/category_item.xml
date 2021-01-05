@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginLeft="23dp"
+    android:layout_marginBottom="10dp">
+
+    <com.comix.rounded.RoundedCornerImageView
+        android:id="@+id/categoryItemImage"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/splas"/>
+
+    <TextView
+        android:id="@+id/categoryItemTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Title"
+        android:layout_below="@+id/categoryItemImage"
+        android:layout_centerHorizontal="true"
+        android:textSize="14sp"
+        android:textColor="@color/black"
+        android:paddingTop="2dp"
+        android:paddingBottom="3dp"/>
+</RelativeLayout>
