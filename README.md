@@ -1,5 +1,5 @@
 # Delivery
-  Delivery is an Android Application.
+  Delivery is a JAVA Android Application.
   ## Delivery is MVP Structured and I used Firebase as a backend Methodology.
   
   ## This is a sample of screenshots.
